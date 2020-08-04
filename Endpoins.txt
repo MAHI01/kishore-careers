@@ -1,0 +1,84 @@
+
+------------------------------------------------------------------
+OrderItamService EndPoints and Json Formate
+---------------------------------------------
+post Methd
+------------
+
+http://localhost:8524/orderItam/save
+
+{
+ "productCode":8563,
+ "productName":"keybords",
+ "qantity":20
+}
+{
+ "productCode":8547,
+ "productName":"mouse",
+ "qantity":20
+}
+
+Get method
+----------
+http://localhost:8524/orderItam/getItams
+
+{
+ "productCode":8563,
+ "productName":"keybords",
+ "qantity":20
+}
+{
+ "productCode":8547,
+ "productName":"mouse",
+ "qantity":20
+}
+
+
+OrderService EndPoints and Json
+--------------------------------
+http://localhost:8524/OrderService/savaservice
+
+Post Method
+-------------
+First Request:
+  {
+    "orderId": 1111,
+    "customerName": "rajesh",
+    "orderDate": "2020-08-05T11:23:00.633+00:00",
+    "shippingAddress": "hyderbad",
+    "orderItems": "laptop",
+    "total": 2000.0
+  },
+  second Request:
+  {
+    "orderId": 2222,
+    "customerName": "Nagalath",
+    "orderDate": "2020-08-05T11:22:12.006+00:00",
+    "shippingAddress": "Bangulor",
+    "orderItems": "cooker",
+    "total": 2000.0
+  }
+
+Get Methd
+----------
+http://localhost:8524/OrderService/fetchAll
+
+
+
+ {
+    "orderId": 1111,
+    "customerName": "John,
+    "orderDate": "2020-08-05T11:23:00.633+00:00",
+    "shippingAddress": "hyderbad",
+    "orderItems": "laptop",
+    "total": 2000.0
+  },
+  {
+    "orderId": 2222,
+    "customerName": "Rock",
+    "orderDate": "2020-08-05T11:22:12.006+00:00",
+    "shippingAddress": "Bangulor",
+    "orderItems": "cooker",
+    "total": 2000.0
+  }
+
